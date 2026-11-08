@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shop · Gurl Aesthetic</title>
+  <meta name="description" content="Shop gel polish, acryl gel, nail drills, tools, charms and rhinestones. Nationwide delivery across Trinidad & Tobago.">
+  <meta name="theme-color" content="#FDF0F5">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="shop">
+  <header data-header></header>
+
+  <main>
+    <section class="page-head">
+      <div class="container">
+        <span class="eyebrow">Shop</span>
+        <h1 data-shop-title>Everything for the <span class="accent">perfect</span> set</h1>
+        <p>Gel polish, acryl gel, drills, tools, charms and rhinestones. All prices in TT$, delivered nationwide.</p>
+      </div>
+    </section>
+
+    <section class="container shop-layout">
+      <aside class="filters" aria-label="Filters">
+        <div class="filter-group">
+          <span class="h">Category</span>
+          <div class="filter-group" data-cat-filters></div>
+        </div>
+        <div class="filter-group">
+          <span class="h">Availability</span>
+          <label style="display:flex;align-items:center;gap:10px;font-size:14px;min-height:44px"><input type="checkbox" data-instock style="width:18px;height:18px;accent-color:#C9437A"> In stock only</label>
+        </div>
+        <div class="help-box">
+          <span class="t">Not sure what you need?</span>
+          <p>Message us on WhatsApp and we will help you build your kit.</p>
+          <a href="https://wa.me/18683386517" data-wa-href target="_blank" rel="noopener">Chat with us</a>
+        </div>
+      </aside>
+
+      <div class="results">
+        <div class="results-bar">
+          <span data-result-count></span>
+          <label>Sort
+            <select class="select" data-sort>
+              <option value="featured">Featured</option>
+              <option value="low">Price: low to high</option>
+              <option value="high">Price: high to low</option>
+            </select>
+          </label>
+        </div>
+        <div class="grid cols-3" data-shop-grid></div>
+      </div>
+    </section>
+  </main>
+
+  <footer data-footer></footer>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
